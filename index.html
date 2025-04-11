@@ -1,0 +1,902 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="Site keywords here">
+	<meta name="description" content="">
+	<meta name='copyright' content=''>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Title -->
+	<title> - HopeDonar Blood Management System.</title>
+
+	<!-- Favicon -->
+
+	<link rel="icon" href="img/121.jpg">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+		rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Nice Select CSS -->
+	<link rel="stylesheet" href="css/nice-select.css">
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- icofont CSS -->
+	<link rel="stylesheet" href="css/icofont.css">
+
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="css/owl-carousel.css">
+	<!-- Datepicker CSS -->
+
+	<link rel="stylesheet" href="css/datepicker.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Medipro CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="loader-outter"></div>
+			<div class="loader-inner"></div>
+
+			<div class="indicator">
+				<svg width="16px" height="12px">
+					<polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+					<polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+				</svg>
+			</div>
+		</div>
+
+	</div>
+	</ul>
+
+	<!-- Header Area -->
+	<header class="header">
+		<!-- Topbar -->
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-5 col-12">
+						<!-- Contact -->
+						<ul class="top-link">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Doctors</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+						<!-- End Contact -->
+					</div>
+					<div class="col-lg-6 col-md-7 col-12">
+						<!-- Top Contact -->
+						<ul class="top-contact">
+							<li><i class="fa fa-phone"></i>+91 8857099627</li>
+							<li><i class="fa fa-envelope"></i><a href="hopedonar@gmail.com">hopedonar@gmail.com></li>
+						</ul>
+						<!-- End Top Contact -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Topbar -->
+		<!-- Header Inner -->
+		<div class="header-inner">
+			<div class="container">
+				<div class="inner">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-12">
+							<!-- Start Logo -->
+							<div class="logo">
+								<a href="index.html"><img src="data:image/png;base64,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" width="100px" alt="#">
+									<a href=""></a>
+							</div>
+							<!-- End Logo -->
+							<!-- Mobile Nav -->
+							<div class="mobile-nav"></div>
+							<!-- End Mobile Nav -->
+						</div>
+						<div class="col-lg-7 col-md-9 col-12">
+							<!-- Main Menu -->
+							<div class="main-menu">
+								<nav class="navigation">
+									<ul class="nav menu">
+										<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li><a href="index.html">Home Page 1</a></li>
+											</ul>
+
+										</li>
+										<li><a href="404.html">service</a></li>
+										<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
+											<ul class="dropdown">
+												<li><a href="blog-single.html">Blog Details</a></li>
+											</ul>
+										</li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</nav>
+							</div>
+							<!--/ End Main Menu -->
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Header Inner -->
+	</header>
+	<!-- End Header Area -->
+
+	<!-- Slider Area -->
+	<section class="slider">
+		<div class="hero-slider">
+			<!-- Start Single Slider -->
+			<div class="single-slider" style="background-image:url('data:image/png;base64,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')">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="text">
+								<h1>We Provide <span>Platform </span> for blood donation<span>!</span></h1>
+								<p>Embark on the Journey of Compassion: Give the Gift of Life, Donate Blood, and
+									Illuminate the Path to Saving Souls</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Single Slider -->
+			<!-- Start Single Slider -->
+			<div class="single-slider" style="background-image:url('img/slider.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="text">
+								<h1>We Provide <span>Platform </span> for blood donation<span>!</span></h1>
+								<p>Harmony in Every Drop: Gift Life's Symphony, Donate Blood, and Be the Melody that
+									Saves Souls. </p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Start End Slider -->
+			<!-- Start Single Slider -->
+			<div class="single-slider" style="background-image:url('img/slider3.jpg')">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="text">
+								<h1>We Provide <span>Platform </span> for blood donation<span>!</span></h1>
+								<p>Be a Lifesaver: Share the Love, Donate Blood. </p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Single Slider -->
+		</div>
+	</section>
+	<!--/ End Slider Area -->
+
+	<!-- Start Schedule Area -->
+	<section class="schedule">
+		<div class="container">
+			<div class="schedule-inner">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12 ">
+						<!-- single-schedule -->
+						<div class="single-schedule first">
+							<div class="inner">
+								<div class="icon">
+									<i class="fa fa-ambulance"></i>
+								</div>
+								<div class="single-content">
+
+									<h4>Life-Saving Impact.</h4>
+									<p>Donated blood can save lives. It is used in various medical situations, including
+										surgeries, trauma care, cancer treatments, and for patients with blood
+										disorders.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- single-schedule -->
+						<div class="single-schedule middle">
+							<div class="inner">
+								<div class="icon">
+									<i class="icofont-prescription"></i>
+								</div>
+								<div class="single-content">
+
+									<h4>Emergency Preparedness</h4>
+									<p> Blood donation banks play a key role in emergency preparedness, ensuring a
+										readily available supply of blood during natural disasters, accidents, or other
+										emergencies.</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-12">
+						<!-- single-schedule -->
+						<div class="single-schedule last">
+							<div class="inner">
+								<div class="icon">
+									<i class="icofont-ui-clock"></i>
+								</div>
+								<div class="single-content">
+									<h4>Opening Hours</h4>
+									<ul class="time-sidual">
+										<li class="day">Monday - Friday <span>8.00-20.00</span></li>
+										<li class="day">Saturday <span>9.00-18.30</span></li>
+										<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+										<li class="day">holiday - there will be our website is open</li>
+										<li class="day">#stayhappystaysafe</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/End Start schedule Area -->
+
+	<!-- Start Feautes -->
+	<section class="Feautes section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>We Are Always Ready to Help You & Your Family</h2>
+						<img src="img/section-img.png" alt="#">
+						
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-12">
+					<!-- Start Single features -->
+					<div class="single-features">
+						<div class="signle-icon">
+							<i class="icofont icofont-ambulance-cross"></i>
+						</div>
+						<h3>Emergence</h3>
+						<p> Blood banks play a pivotal role in emergency preparedness, ensuring a rapid response to
+							unforeseen events by maintaining an inventory of blood products.</p>
+					</div>
+					<!-- End Single features -->
+				</div>
+				<div class="col-lg-4 col-12">
+					<!-- Start Single features -->
+					<div class="single-features">
+						<div class="signle-icon">
+							<i class="icofont icofont-medical-sign-alt"></i>
+						</div>
+						<h3>Medical Eligibility Criteria</h3>
+						<p>Clearly communicate the medical eligibility criteria for blood donation, including age
+							restrictions, weight requirements, and health considerations, to guide potential donors.</p>
+					</div>
+					<!-- End Single features -->
+				</div>
+				<div class="col-lg-4 col-12">
+					<!-- Start Single features -->
+					<div class="single-features last">
+						<div class="signle-icon">
+							<i class="icofont icofont-stethoscope"></i>
+						</div>
+						<h3>Medical Treatment</h3>
+						<p>A quick blood test is conducted to check hemoglobin levels, ensuring donors have sufficient
+							iron for a safe donation.</p>
+					</div>
+					<!-- End Single features -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Feautes -->
+
+	<!-- Start Fun-facts -->
+	<div id="fun-facts" class="fun-facts section overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Fun -->
+					<div class="single-fun">
+						<i class="icofont icofont-home"></i>
+						<div class="content">
+							<span class="counter">10</span>
+							<p>Hospital Rooms</p>
+						</div>
+					</div>
+					<!-- End Single Fun -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Fun -->
+					<div class="single-fun">
+						<i class="icofont icofont-user-alt-3"></i>
+						<div class="content">
+							<span class="counter">10</span>
+							<p>Specialist Doctors</p>
+						</div>
+					</div>
+					<!-- End Single Fun -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Fun -->
+					<div class="single-fun">
+						<i class="icofont-simple-smile"></i>
+						<div class="content">
+							<span class="counter">10</span>
+							<p>Happy Patients</p>
+						</div>
+					</div>
+					<!-- End Single Fun -->
+				</div>
+				<div class="col-lg-3 col-md-6 col-12">
+					<!-- Start Single Fun -->
+					<div class="single-fun">
+						<i class="icofont icofont-table"></i>
+						<div class="content">
+							<span class="counter">2</span>
+							<p>Years of Experience</p>
+						</div>
+					</div>
+					<!-- End Single Fun -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/ End Fun-facts -->
+
+	<!-- Start Why choose -->
+	<section class="why-choose section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>We Offer Different Services To Improve Your Health</h2>
+						<img src="img/section-img.png" alt="#">
+						<p>Implementing an online platform for donors to register, schedule appointments, and update
+							health information.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-12">
+					<!-- Start Choose Left -->
+					<div class="choose-left">
+						<h3>Who We Are</h3>
+						<p>We are creating a biggest online blood donation platform for you and your family,It help that
+							your time is minimize and you can connect with us so you get notification various campiogn
+							of blood donation if you intersted.</p>
+						<p>Providing healthcare professionals with secure access to relevant donor health information.
+						</p>
+						<div class="row">
+							<div class="col-lg-6">
+								<ul class="list">
+									<li><i class="fa fa-caret-right"></i>Blood Donation Services </li>
+									<li><i class="fa fa-caret-right"></i>Health Screening</li>
+									<li><i class="fa fa-caret-right"></i>Donor Education</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul class="list">
+									<li><i class="fa fa-caret-right"></i>Emergency Response </li>
+									<li><i class="fa fa-caret-right"></i>Online Donor Registration</li>
+									<li><i class="fa fa-caret-right"></i>Appointment Scheduling.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- End Choose Left -->
+				</div>
+				<div class="col-lg-6 col-12">
+					<!-- Start Choose Rights -->
+					<div class="choose-right">
+						<div class="video-image">
+							<!-- Video Animation -->
+							<div class="promo-video">
+								<div class="waves-block">
+									<div class="waves wave-1"></div>
+									<div class="waves wave-2"></div>
+									<div class="waves wave-3"></div>
+								</div>
+							</div>
+							<iframe width="560" height="400"
+								src="https://www.youtube-nocookie.com/embed/kOISEM6L4xk?si=DyU_BUUn4hOaPOSd"
+								title="YouTube video player" frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen></iframe>
+
+						</div>
+					</div>
+					<!-- End Choose Rights -->
+				</div </div>
+			</div>
+	</section>
+	<!--/ End Why choose -->
+
+	<!-- Start Call to action -->
+	<section class="call-action overlay" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<div class="content">
+						<h2>Do you need Emergency for donation of blood? Call @ 8857099627</h2>
+						
+						<div class="button">
+							<a href="#" class="btn">Contact Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End Call to action -->
+
+	<!-- Start portfolio -->
+	<section class="portfolio section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>We Maintain Cleanliness Rules Inside Hospital</h2>
+						<img src="img/section-img.png" alt="#">
+						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-12">
+					<div class="owl-carousel portfolio-slider">
+						<div class="single-pf">
+							<img src="img/pf1.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf2.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf3.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf4.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf1.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf2.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf3.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+						<div class="single-pf">
+							<img src="img/pf4.jpg" alt="#">
+							<a href="portfolio-details.html" class="btn">View Details</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End portfolio -->
+
+	<!-- Start service -->
+	<section class="services section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>We Offer Different Services To Improve Your Health</h2>
+						<img src="img/section-img.png" alt="#">
+						
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="icofont icofont-prescription"></i>
+						<h4><a href="service-details.html">Plasma checkup</a></h4>
+						<ul>
+							<li>Plasma is a component of blood that can be donated separately from whole blood.</li>
+							<li>Plasma donation typically involves apheresis, a process where blood is drawn.</li>
+							<li>plasma is separated, and the remaining components are returned to the donor.</li>
+						</ul>
+					</div>
+					<!-- End Single Service -->
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="icofont icofont-heart-alt"></i>
+						<h4><a href="service-details.html">WBC & RBC checkup</a></h4>
+						<p>Donors undergo pre-donation health screening, including a check on WBC counts, to ensure
+							their immune system is healthy. </p>
+						<p>Donors are assessed to ensure their RBC counts fall within an acceptable range, and
+							eligibility criteria may vary based on factors such as age and gender.</p>
+					</div>
+
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Start Single Service -->
+					<div class="single-service">
+						<i class="icofont icofont-blood"></i>
+						<h4><a href="service-details.html">Blood Transfusion</a></h4>
+						<p>Blood transfusion is the process of transferring blood or blood components from one
+							individual (donor) to another (recipient).</p>
+						<p>Transfusions may involve whole blood or specific blood components such as red blood cells
+							(RBCs), plasma, platelets, or clotting factors, depending on the patient's needs.</p>
+					</div>
+					<!-- End Single Service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/ End service -->
+
+	<!-- Pricing Table -->
+
+
+
+	<!-- Start Blog Area -->
+	<section class="blog section" id="blog">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>Keep up with Our Most Recent blood donation News.</h2>
+						<img src="img/section-img.png" alt="#">
+						
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Blog -->
+					<div class="single-news">
+						<div class="news-head">
+							<img src="img/blog1.jpg" alt="#">
+						</div>
+						<div class="news-body">
+							<div class="news-content">
+								<div class="date">05 jan, 2024</div>
+								<h2><a href="blog-single.html">World Blood Donor Day: Not just a noble cause, blood
+										donation is ‘equivalent to one week of exercise’</a></h2>
+								<p class="text">Know Your Body: You cannot donate blood more than 3-4 times a year and
+									thus it cannot be a substitute for exercise, said Dr C Shivaram, consultant and
+									head, transfusion medicine, Manipal Hospital, Old Airport Road, Bangalore</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Single Blog -->
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Blog -->
+					<div class="single-news">
+						<div class="news-head">
+							<img src="img/blog2.jpg" alt="#">
+						</div>
+						<div class="news-body">
+							<div class="news-content">
+								<div class="date">15 Sep 2022 </div>
+								<h2><a href="blog-single.html">Milestone In Voluntary Blood Donation Achieved</a></h2>
+								<p class="text">On the occasion of Prime Minister Narendra Modi’s birthday, more than
+									87,000 people voluntarily donated blood in a single day reaching momentous milestone
+									of creating a new world record.</p>
+							</div>
+						</div>
+					</div>
+					<!-- End Single Blog -->
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<!-- Single Blog -->
+					<div class="single-news">
+						<div class="news-head">
+							<img src="img/blog3.jpg" alt="#">
+						</div>
+						<div class="news-body">
+							<div class="news-content">
+								<div class="date">05 Jan, 2023</div>
+								<h2><a href="blog-single.html">World Blood Donor Day: Things to keep in mind before and
+										after donating blood.</a></h2>
+								<p class="text">Every day, thousands of people may need a blood transfusion for various
+									reasons like surgery, trauma, and chronic illness. Excessive blood loss is known to
+									cause death; referred to as exsanguination in medical terminology.  </p>
+							</div>
+						</div>
+					</div>
+					<!-- End Single Blog -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Blog Area -->
+
+	<!-- Start clients -->
+	<div class="clients overlay">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-12">
+					<div class="owl-carousel clients-slider">
+						<div class="single-clients">
+							<img src="img/client1.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client2.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client3.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client4.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client5.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client1.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client2.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client3.png" alt="#">
+						</div>
+						<div class="single-clients">
+							<img src="img/client4.png" alt="#">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/Ens clients -->
+
+	<!-- Start Appointment -->
+	<section class="appointment">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-title">
+						<h2>We Are Always Ready to Help You. Book An Appointment</h2>
+						<img src="img/section-img.png" alt="#">
+						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6 col-12">
+				<form class="form" action="https://api.web3forms.com/submit" method="POST">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<input type="hidden" name="access_key" value="870da5e4-061e-49d3-b01c-cfe5ab040023">
+								<input type="text" id="Name" name="Name" placeholder="Name" required="">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<input type="email" id="email" name="email" placeholder="Email" required="">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<input type="text" id="phone" name="phone" placeholder="Phone" required="">
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+								<textarea id="message" name="message" placeholder="Your Message" required=""></textarea>
+							</div>
+							<div>
+								<input type="text" placeholder="Date" id="datepicker">
+							</div>
+							<br>
+						</div>
+						<div class="col-12">
+							<div class="form-group login-btn">
+								<button class="btn" type="BOOK AN APPOINTMENT" id="BOOK AN APPOINTMENT"
+									name="BOOK AN APPOINTMENT" value="BOOK AN APPOINTMENT">BOOK AN APPOINTMENT</button>
+							</div>
+
+						</div>
+						<div class="col-lg-7 col-md-8 col-12">
+							<p>( We will be confirm by an Text Message )</p>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-6 col-md-12 ">
+				<div class="appointment-image">
+					<img src="img/contact-img.png" alt="#">
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<!-- End Appointment -->
+
+	<!-- Start Newsletter Area -->
+
+	<!-- /End Newsletter Area -->
+
+	<!-- Footer Area -->
+	<footer id="footer" class="footer ">
+		<!-- Footer Top -->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="single-footer">
+							<h2>About Us</h2>
+							<p>Welcome to HopeDonar, where saving lives is not just a mission; it's a commitment we live by every day. Founded in [2024], we are a passionate community dedicated to making a positive impact on the world by promoting and facilitating blood donation.</p>
+							<!-- Social -->
+							<ul class="social">
+								<li><a href="#"><i class="icofont-facebook"></i></a></li>
+								<li><a href="#"><i class="icofont-google-plus"></i></a></li>
+								<li><a href="#"><i class="icofont-twitter"></i></a></li>
+								<li><a href="#"><i class="icofont-vimeo"></i></a></li>
+								<li><a href="#"><i class="icofont-pinterest"></i></a></li>
+							</ul>
+							<!-- End Social -->
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="single-footer f-link">
+							<h2>Quick Links</h2>
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-12">
+									<ul>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+										</li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+										</li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a>
+										</li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our
+												Cases</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other
+												Links</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6 col-12">
+									<ul>
+										<li><a href="#"><i class="fa fa-caret-right"
+													aria-hidden="true"></i>Consuling</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Finance</a>
+										</li>
+										<li><a href="#"><i class="fa fa-caret-right"
+													aria-hidden="true"></i>Testimonials</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a></li>
+										<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact
+												Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="single-footer">
+							<h2>Open Hours</h2>
+		
+							<ul class="time-sidual">
+								<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+								<li class="day">Saturday <span>9.00-18.30</span></li>
+								<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="single-footer">
+							<h2>Newsletter</h2>
+							<p>subscribe to our newsletter to get allour news in your inbox.. ,</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Footer Top -->
+		<!-- Copyright -->
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-12">
+						<div class="copyright-content">
+							<p>© Copyright 2018 | All Rights Reserved by <a href="https://www..com"
+									target="_blank"><hopedonar.com</hopedonar></a> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Copyright -->
+	</footer>
+	<!--/ End Footer Area -->
+
+	<!-- jquery Min JS -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery Migrate JS -->
+	<script src="js/jquery-migrate-3.0.0.js"></script>
+	<!-- jquery Ui JS -->
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- Easing JS -->
+	<script src="js/easing.js"></script>
+	<!-- Color JS -->
+	<script src="js/colors.js"></script>
+	<!-- Popper JS -->
+	<script src="js/popper.min.js"></script>
+	<!-- Bootstrap Datepicker JS -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Jquery Nav JS -->
+	<script src="js/jquery.nav.js"></script>
+	<!-- Slicknav JS -->
+	<script src="js/slicknav.min.js"></script>
+	<!-- ScrollUp JS -->
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<!-- Niceselect JS -->
+	<script src="js/niceselect.js"></script>
+	<!-- Tilt Jquery JS -->
+	<script src="js/tilt.jquery.min.js"></script>
+	<!-- Owl Carousel JS -->
+	<script src="js/owl-carousel.js"></script>
+	<!-- counterup JS -->
+	<script src="js/jquery.counterup.min.js"></script>
+	<!-- Steller JS -->
+	<script src="js/steller.js"></script>
+	<!-- Wow JS -->
+	<script src="js/wow.min.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Counter Up CDN JS -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+
+	<link rel="stylesheet" href="map.html">
+	<!-- Google Map API Key JS -->
+
+</body>
+
+</html>

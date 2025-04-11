@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX - Your Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html/about.html">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">HopeDonar</div>
+        <ul>
+            <li>Home</li>
+            <li><a href="about.html">About</a></li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1><img src="key.jpg" alt="Key image"> Donar Information</h1>
+        <p>Dear donar, please fill the following information correctly . Filling all the information is MANDATORY</p>
+        <h2>STATS: <span id="alert">(Copied!)</span></h2> 
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Blood group</th>
+                <th>Contact No.</th>
+                <th>Email</th>
+                <th>Delete</th>
+                
+            </tr> 
+ 
+        </table>
+
+        <h2>Fill the following information :</h2>
+        <form action="/submit" method="post">
+
+            <!-- Text input for website -->
+            <label for="website">Name:</label>
+            <input type="text" id="website" name="website" required>
+            <br><br>
+
+            <!-- Text input for username -->
+            <label for="username">Blood group:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <!-- Password input -->
+            <label for="password">Conatact no.:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <!-- Submit button -->
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+  <footer> <p class="copyright"> &#169; Copyright - Jay Kotwal</p></footer>
+</body>
+
+</html>
